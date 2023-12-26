@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="879.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="668.0" prefWidth="820.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Nome" />
+            <TextField layoutX="59.0" layoutY="10.0" prefHeight="25.0" prefWidth="362.0" />
+            <Label layoutX="14.0" layoutY="46.0" text="RG" />
+            <TextField layoutX="58.0" layoutY="42.0" />
+            <Label layoutX="226.0" layoutY="46.0" text="CPF" />
+            <TextField layoutX="272.0" layoutY="42.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="439.0" layoutY="46.0" text="CTPS" />
+            <TextField layoutX="490.0" layoutY="42.0" prefHeight="25.0" prefWidth="167.0" />
+            <Label layoutX="14.0" layoutY="87.0" text="Titulo Eleitoral" />
+            <TextField layoutX="97.0" layoutY="83.0" />
+            <Label layoutX="258.0" layoutY="87.0" text="Seção" />
+            <TextField layoutX="297.0" layoutY="83.0" prefHeight="25.0" prefWidth="125.0" />
+            <Label layoutX="438.0" layoutY="87.0" text="CNH" />
+            <TextField layoutX="490.0" layoutY="83.0" prefHeight="25.0" prefWidth="167.0" />
+            <ImageView fitHeight="138.0" fitWidth="125.0" layoutX="681.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="12.0" layoutY="170.0" text="Nome do Pai" />
+            <TextField layoutX="100.0" layoutY="166.0" prefHeight="25.0" prefWidth="370.0" />
+            <Label layoutX="13.0" layoutY="213.0" text="Nome do Mãe" />
+            <TextField layoutX="100.0" layoutY="209.0" prefHeight="25.0" prefWidth="370.0" />
+            <Label layoutX="14.0" layoutY="364.0" text="Estado Civiel" />
+            <SplitMenuButton layoutX="99.0" layoutY="360.0" mnemonicParsing="false" text="SplitMenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Label layoutX="438.0" layoutY="14.0" text="Data Nascimento" />
+            <TextField layoutX="539.0" layoutY="10.0" prefHeight="25.0" prefWidth="118.0" />
+            <Pane layoutX="16.0" layoutY="394.0" prefHeight="255.0" prefWidth="790.0">
+               <children>
+                  <TableView layoutX="13.0" layoutY="67.0" prefHeight="189.0" prefWidth="770.0">
+                     <columns>
+                        <TableColumn prefWidth="604.0" text="Nome" />
+                        <TableColumn prefWidth="185.0" text="Data de Nascimento" />
+                     </columns>
+                  </TableView>
+                  <TextField layoutX="95.0" layoutY="7.0" prefHeight="25.0" prefWidth="370.0" />
+                  <Label layoutX="14.0" layoutY="11.0" text="Conjuge" />
+                  <Label layoutX="14.0" layoutY="44.0" text="Filhos" />
+                  <RadioButton layoutX="69.0" layoutY="44.0" mnemonicParsing="false" text="Sim" />
+                  <RadioButton layoutX="119.0" layoutY="44.0" mnemonicParsing="false" text="Não" />
+               </children>
+            </Pane>
+            <Label layoutX="14.0" layoutY="129.0" text="Nacionalidade" />
+            <TextField layoutX="97.0" layoutY="125.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="255.0" layoutY="129.0" text="Naturalidade" />
+            <TextField layoutX="339.0" layoutY="125.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="252.0" layoutY="253.0" text="ID" />
+            <TextField layoutX="282.0" layoutY="249.0" prefHeight="25.0" prefWidth="69.0" />
+            <Label layoutX="15.0" layoutY="253.0" text="Setor" />
+            <TextField layoutX="643.0" layoutY="249.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="380.0" layoutY="253.0" text="Tipo de Contrato" />
+            <SplitMenuButton layoutX="59.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="SplitMenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Label layoutX="584.0" layoutY="253.0" text="Salario" />
+            <SplitMenuButton layoutX="484.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="SplitMenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Label layoutX="17.0" layoutY="322.0" text="Escala " />
+            <SplitMenuButton layoutX="61.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="SplitMenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Label layoutX="17.0" layoutY="289.0" text="Horario de trabalho" />
+            <Label layoutX="205.0" layoutY="322.0" prefHeight="17.0" prefWidth="44.0" text="Entrada" />
+            <TextField layoutX="265.0" layoutY="318.0" prefHeight="25.0" prefWidth="90.0" />
+            <Label layoutX="381.0" layoutY="322.0" text="Saida" />
+            <TextField layoutX="426.0" layoutY="318.0" prefHeight="25.0" prefWidth="136.0" />
+         </children>
+      </Pane>
+      <Label layoutX="26.0" layoutY="682.0" text="Endereço" />
+      <Label layoutX="37.0" layoutY="715.0" text="Rua" />
+      <TextField layoutX="70.0" layoutY="711.0" prefHeight="25.0" prefWidth="273.0" />
+      <Label layoutX="596.0" layoutY="715.0" text="Estado" />
+      <TextField layoutX="76.0" layoutY="752.0" prefHeight="25.0" prefWidth="197.0" />
+      <SplitMenuButton layoutX="653.0" layoutY="711.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="SplitMenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <Label layoutX="37.0" layoutY="756.0" text="CEP" />
+      <Label layoutX="370.0" layoutY="715.0" text="Cidade" />
+      <TextField layoutX="425.0" layoutY="711.0" />
+      <Label layoutX="299.0" layoutY="756.0" text="Telefone" />
+      <TextField layoutX="370.0" layoutY="752.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="546.0" layoutY="756.0" text="Celular" />
+      <TextField layoutX="596.0" layoutY="752.0" />
+      <Label layoutX="34.0" layoutY="794.0" text="Email" />
+      <TextField layoutX="76.0" layoutY="790.0" prefHeight="25.0" prefWidth="273.0" />
+      <Button layoutX="283.0" layoutY="840.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="Limpar" />
+      <Button layoutX="429.0" layoutY="840.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="Cadastrar" />
+   </children>
+</AnchorPane>
