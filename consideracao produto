@@ -1,0 +1,55 @@
+Características Essenciais
+
+Identificação e Informações Básicas
+id (Identificador Único): Um código único para cada produto. Pode ser um número sequencial, um UUID ou o próprio código de barras. É fundamental para identificar o produto no banco de dados.
+
+nome (Nome do Produto): Descrição textual do produto, clara e concisa (ex: "Refrigerante Cola 2L", "Arroz Branco 5kg").
+
+descricao (Descrição Detalhada - Opcional): Uma descrição mais longa, útil para produtos com características específicas ou para sistemas que exibem mais detalhes ao cliente.
+
+codigoBarras (Código de Barras): O número GTIN (Global Trade Item Number) do produto. Essencial para leitura com scanners e para identificação internacional.
+
+Preços
+precoCusto (Preço de Custo): O valor que a empresa paga pelo produto ao fornecedor. Importante para cálculo de margem de lucro.
+
+precoVenda (Preço de Venda): O preço pelo qual o produto é vendido ao consumidor final.
+
+unidadeMedida (Unidade de Medida): Indica como o produto é vendido (ex: "un" para unidade, "kg" para quilograma, "lt" para litro, "mt" para metro). Fundamental para produtos vendidos por peso ou metragem.
+
+permiteFracionamento (Permite Fracionamento): Um booleano que indica se o produto pode ser vendido em quantidades não inteiras (ex: 0.5 kg de queijo, 1.2 metros de tecido).
+
+Estoque
+quantidadeEstoque (Quantidade em Estoque): O número atual de unidades disponíveis do produto.
+
+estoqueMinimo (Estoque Mínimo - Opcional): Um limite abaixo do qual o sistema deve alertar para a necessidade de reposição.
+
+localizacaoEstoque (Localização no Estoque - Opcional): Se o sistema de PDV também gerenciar o estoque físico, essa informação pode ser útil (ex: "Corredor 3, Prateleira B").
+
+Classificação e Categorização
+categoria (Categoria): Agrupamento lógico do produto (ex: "Bebidas", "Alimentos", "Limpeza", "Eletrônicos"). Facilita a organização, relatórios e buscas.
+
+subcategoria (Subcategoria - Opcional): Uma subdivisão da categoria para maior granularidade (ex: Categoria "Bebidas", Subcategoria "Refrigerantes").
+
+marca (Marca): O fabricante do produto (ex: "Coca-Cola", "Nestlé").
+
+Atributos Fiscais e Legais
+ncm (NCM - Nomenclatura Comum do Mercosul): Código fiscal brasileiro que classifica as mercadorias. Essencial para emissão de notas fiscais.
+
+cest (CEST - Código Especificador da Substituição Tributária - Opcional): Código utilizado para identificar mercadorias sujeitas à substituição tributária.
+
+origem (Origem da Mercadoria): Indica se o produto é nacional ou importado.
+
+Atributos Adicionais (Conforme Necessidade)
+ativo (Ativo/Inativo): Um booleano para indicar se o produto está atualmente disponível para venda. Útil para descontinuar produtos sem excluí-los do histórico.
+
+dataCadastro (Data de Cadastro): A data em que o produto foi registrado no sistema.
+
+dataUltimaAtualizacao (Data da Última Atualização): A data da última modificação nos dados do produto.
+
+fornecedor (Fornecedor - Opcional): O principal fornecedor do produto.
+
+peso (Peso - Opcional): Útil para cálculo de frete ou para produtos vendidos por peso.
+
+imagens (Imagens - Opcional): URLs ou referências a imagens do produto, especialmente útil para sistemas com interface gráfica para o cliente.
+
+promocao (Promoção - Opcional): Pode ser um objeto ou um conjunto de atributos que indicam se o produto está em promoção e qual o preço promocional, data de início/fim, etc.
