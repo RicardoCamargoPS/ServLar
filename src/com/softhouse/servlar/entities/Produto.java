@@ -2,7 +2,7 @@ package com.softhouse.servlar.entities;
 
 public class Produto {
 
-    private int codigoSKU, codigoEAN13;  
+    private int codigoSKU, codigoEAN13, codigoDUM14;  
     private String nome, descricao, unidadeMedida;
     private long precoCusto, precoVenda;
     private boolean fracionamento, disponivel;
@@ -10,11 +10,12 @@ public class Produto {
     private String ncm, origem, fornecedor;
 
     
-    public Produto(int codigoSKU, int codigoEAN13, String nome, String descricao, String unidadeMedida, long precoCusto,
+    public Produto(int codigoSKU, int codigoEAN13, int codigoDUM14, String nome, String descricao, String unidadeMedida, long precoCusto,
             long precoVenda, boolean fracionamento, boolean disponivel, String categoria, String subCategoria,
             String marca, String ncm, String origem, String fornecedor) {
         this.codigoSKU = codigoSKU;
         this.codigoEAN13 = codigoEAN13;
+        this.codigoDUM14 = codigoDUM14;
         this.nome = nome;
         this.descricao = descricao;
         this.unidadeMedida = unidadeMedida;
@@ -29,10 +30,11 @@ public class Produto {
         this.origem = origem;
         this.fornecedor = fornecedor;
     }
-    public Produto(int codigoSKU, int codigoEAN13, String nome, String unidadeMedida, long precoCusto, long precoVenda,
+    public Produto(int codigoSKU, int codigoEAN13, int codigoDUM14, String nome, String unidadeMedida, long precoCusto, long precoVenda,
             boolean disponivel, String marca, String fornecedor) {
         this.codigoSKU = codigoSKU;
         this.codigoEAN13 = codigoEAN13;
+        this.codigoDUM14 = codigoDUM14;
         this.nome = nome;
         this.unidadeMedida = unidadeMedida;
         this.precoCusto = precoCusto;
@@ -41,8 +43,9 @@ public class Produto {
         this.marca = marca;
         this.fornecedor = fornecedor;
     }
-    public Produto(int codigoSKU, String nome, String unidadeMedida, long precoCusto, long precoVenda) {
+    public Produto(int codigoSKU, int codigoDUM14, String nome, String unidadeMedida, long precoCusto, long precoVenda) {
         this.codigoSKU = codigoSKU;
+        this.codigoDUM14 = codigoDUM14;
         this.nome = nome;
         this.unidadeMedida = unidadeMedida;
         this.precoCusto = precoCusto;
@@ -53,6 +56,9 @@ public class Produto {
     }
     public void setCodigoEAN13(int codigoEAN13) {
         this.codigoEAN13 = codigoEAN13;
+    }
+    public void setCodigoDUM14(int codigoDUM14) {
+        this.codigoDUM14 = codigoDUM14;
     }
     public void setNome(String nome) {
         this.nome = nome;
@@ -98,6 +104,9 @@ public class Produto {
     }
     public int getCodigoEAN13() {
         return codigoEAN13;
+    }
+     public int getCodigoDUM14() {
+        return codigoDUM14;
     }
     public String getNome() {
         return nome;
